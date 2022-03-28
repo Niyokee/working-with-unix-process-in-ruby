@@ -1,12 +1,12 @@
-# fork do
-#   5.times do
-#     sleep 1
-#     puts 'i am an orphan'
-#   end
-# end
-#
-# Process.wait
-# abort 'parent process died...'
+fork do
+  5.times do
+    sleep 1
+    puts 'i am an orphan'
+  end
+end
+
+Process.wait
+abort 'parent process died...'
 
 
 3.times do
